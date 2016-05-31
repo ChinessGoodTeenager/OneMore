@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="FunChooseCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gse-YA-4HM">
+                        <rect key="frame" x="10" y="10" width="393" height="162"/>
+                        <color key="backgroundColor" red="0.15624324840000001" green="0.53458421229999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-7u-DEG">
+                        <rect key="frame" x="10" y="177" width="393" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MwH-7u-DEG" secondAttribute="trailing" constant="10" id="6Zn-w5-oiV"/>
+                    <constraint firstItem="MwH-7u-DEG" firstAttribute="top" secondItem="gse-YA-4HM" secondAttribute="bottom" constant="5" id="UaK-hx-Tp9"/>
+                    <constraint firstAttribute="trailing" secondItem="gse-YA-4HM" secondAttribute="trailing" constant="10" id="ZeF-je-TM6"/>
+                    <constraint firstItem="MwH-7u-DEG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qcj-Jz-CA1"/>
+                    <constraint firstItem="gse-YA-4HM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sP6-IC-zDM"/>
+                    <constraint firstItem="gse-YA-4HM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tFZ-bi-I9c"/>
+                    <constraint firstAttribute="bottom" secondItem="gse-YA-4HM" secondAttribute="bottom" constant="35" id="v8r-gb-65n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseContent" destination="MwH-7u-DEG" id="Pf8-M9-RH4"/>
+                <outlet property="chooseImage" destination="gse-YA-4HM" id="75w-Tr-njj"/>
+            </connections>
+            <point key="canvasLocation" x="346.5" y="195"/>
+        </tableViewCell>
+    </objects>
+</document>
